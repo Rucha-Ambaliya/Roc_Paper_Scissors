@@ -36,7 +36,8 @@ This is a simple frontend project of the classic Rock-Paper-Scissors game. The l
 
 ### Screenshots
 <div style="display: flex; justify-content: space-between;">
-  <img src="images/gameMobile.jpg" alt="gamePC" width="160" height="300" style="margin-right: 45px;">
+  <img src="images/gameMobile.jpg" alt="gamePC" width="160" height="300">
+  <img style="margin-right: 50px;">
   <img src="images/gamePC.PNG" alt="Draw" width="400" height="300">
 </div>
 
