@@ -3,6 +3,8 @@ let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
+const choicesBox = document.querySelector("#choices-box");
+const winnerMsg = document.querySelector("#winner-msg");
 
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
@@ -18,7 +20,38 @@ const drawGame = (userChoice, compChoice) => {
     msg.style.backgroundColor = "#081b31";
 }
 
-const showWinner = (userWin, userChoice, compChoice) => {
+const showResult = (winner) => {
+  choicesBox.classList.add("hide");
+  // Update the content inside the <span> element
+  if (winner == "User") {
+    document.getElementById(
+      "winner-text"
+    ).innerText = `Congratulations! You won the match.`;
+  } else {
+    document.getElementById(
+      "winner-text"
+    ).innerText = `You Lost! Play again.`;
+  }
+  
+  winnerMsg.classList.remove("hide");
+  msg.innerText = "Reset";
+  msg.style.backgroundColor = "#081b31";
+};
+
+msg.addEventListener("click", () => {
+    if (msg.innerText == "Reset") {
+        choicesBox.classList.remove("hide");
+        // Update the content inside the <span> element
+        winnerMsg.classList.add("hide");
+        msg.innerText = "Play Your Move";
+    }
+    userScore = 0;
+    compScore = 0;
+    userScorePara.innerText = userScore;
+    compScorePara.innerText = compScore;
+})
+
+function showWinner(userWin, userChoice, compChoice) {
     if (userWin) {
         userScore++;
         msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
@@ -29,6 +62,11 @@ const showWinner = (userWin, userChoice, compChoice) => {
         msg.innerText = `You Lost! ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor = "red";
         compScorePara.innerText = compScore;
+    }
+    if (userScore == 20) {
+        showResult("User");
+    } else if(compScore == 20){
+        showResult("Computer");
     }
 }
 

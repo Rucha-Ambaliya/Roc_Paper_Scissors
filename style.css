@@ -14,6 +14,7 @@ h1{
 .choice{
     height: 30vmin;
     width: 30vmin;
+    display: inline-block;
 }
   
 .choice img{
@@ -28,14 +29,34 @@ h1{
 }
   
 .choices {
+    width: 100vw;
+    height: 30vmin;
+    margin-top: 10vmin;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     gap: 3rem;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 10vmin;
+}
+
+#choices-box{
+    width: 100vw;
+    height: 30vmin;
+}
+
+#winner-msg{
+    text-align: center;
+    width: 65vw;
+    height: 10vmin;
+    border-radius: 2vmin;
+    font-size: 8vmin;
+    color: aliceblue;
+    background-color: #f70088;
+}
+
+.hide{
+    display: none;
 }
 
 .score-board{
@@ -61,6 +82,7 @@ h1{
 }
 
 #msg{
+    min-width: 60vmin;
     background-color: #081b31;
     color: white;
     font-size: 6vmin;
