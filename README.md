@@ -3,11 +3,12 @@
 Welcome to my Rock-Paper-Scissors game project! 🎮
 
 ## Overview
-This is a simple frontend project of the classic Rock-Paper-Scissors game. The layout of the project is designed to be responsive, adapting to different screen sizes using viewport units (vw, vh, vmin). This game keeps track of the marks gained by the user and the computer and displays it on the screen. Although there is not any score limit for now to stop the game, I'm willing to add it soon after my exams are over.
+This is a simple frontend project of the classic Rock-Paper-Scissors game. The layout of the project is designed to be responsive, adapting to different screen sizes using viewport units (vw, vh, vmin). This game keeps track of the marks gained by the user and the computer and displays it on the screen and the game will reset when either the player or the computer reaches a score of 20.
 
 ## Features
 - Classic Rock-Paper-Scissors gameplay
 - Responsive design for various devices
+- Game resets when either player or computer reaches a score of 20
 
 ## Technologies Used
 - HTML

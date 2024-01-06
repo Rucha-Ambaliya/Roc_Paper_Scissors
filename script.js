@@ -34,12 +34,12 @@ const showResult = (winner) => {
   }
   
   winnerMsg.classList.remove("hide");
-  msg.innerText = "Reset";
+  msg.innerText = "Play Again";
   msg.style.backgroundColor = "#081b31";
 };
 
 msg.addEventListener("click", () => {
-    if (msg.innerText == "Reset") {
+    if (msg.innerText == "Play Again") {
         choicesBox.classList.remove("hide");
         // Update the content inside the <span> element
         winnerMsg.classList.add("hide");
