@@ -63,9 +63,9 @@ function showWinner(userWin, userChoice, compChoice) {
         msg.style.backgroundColor = "red";
         compScorePara.innerText = compScore;
     }
-    if (userScore == 20) {
+    if (userScore == 5) {
         showResult("User");
-    } else if(compScore == 20){
+    } else if(compScore == 5){
         showResult("Computer");
     }
 }
