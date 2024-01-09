@@ -35,8 +35,9 @@ This is a simple frontend project of the classic Rock-Paper-Scissors game. The l
 ### Links
 
 - To visit the website:
-  ```bash
+
   https://rucha-ambaliya.github.io/Rock_Paper_Scissors/
+  
 - To clone the repository:
 
    ```bash
