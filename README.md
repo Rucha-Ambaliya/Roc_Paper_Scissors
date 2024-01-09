@@ -22,17 +22,25 @@ This is a simple frontend project of the classic Rock-Paper-Scissors game. The l
 - **images:** Folder containing necessary images for the game.
 
 ## How to Play
-- Clone the repository to your local machine.
-- Open `index.html` in your web browser.
-- Enjoy playing Rock-Paper-Scissors!
+- To visit the website:
+  ```bash
+  https://rucha-ambaliya.github.io/Clone_Website_Project/
 
-### Link
+## How to Contribute
 
+- If you'd like to contribute to the project or report issues, feel free to fork the repository and submit pull requests.
+  - Clone the repository to your local machine.
+  - Open `index.html` in your web browser to test.
+
+### Links
+
+- To visit the website:
+  ```bash
+  https://rucha-ambaliya.github.io/Rock_Paper_Scissors/
 - To clone the repository:
 
    ```bash
    https://github.com/Rucha-Ambaliya/Roc_Paper_Scissors.git
-
 - Feel free to fork this project and make your own improvements! If you have any questions or suggestions, don't hesitate to reach out.
 
 ### Screenshots
